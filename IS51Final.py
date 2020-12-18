@@ -12,3 +12,17 @@ The grades then will be listed as integers.
 Then the calculations can begin.
 End result is displaying the 3 solutions.
 """
+"""
+main()
+    starts the program
+    infile = open
+    display number of grades
+    print("")
+    display average 
+    print("")
+    -both done by calculation 
+
+calculate_percent_above_average()
+    caluate the percent
+    print("")
+"""
