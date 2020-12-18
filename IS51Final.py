@@ -26,3 +26,26 @@ calculate_percent_above_average()
     caluate the percent
     print("")
 """
+
+def main():
+    infile = open("Final.txt", 'r')
+    finalGrades = [line.rstrip() for line in infile]
+    infile.close()
+    for i in range(len(finalGrades)):
+        finalGrades[i] = int(finalGrades[i])
+    len(finalGrades)
+    print("Total amount of grades is: ", len(finalGrades))
+    gradeAverage = sum(finalGrades) / len(finalGrades)
+    print("The average grade is: ", gradeAverage)
+    dict = finalGrades
+    avg = gradeAverage
+    calculate_percent_above_average(dict, avg)
+
+def calculate_percent_above_average(dict, avg):
+    num = 0 
+    for grade in dict:
+        if grade > avg:
+            num += 1
+    print("The percentage of grades above average: {0:.2f}%".format(100 * num / len(dict)))
+
+main()
